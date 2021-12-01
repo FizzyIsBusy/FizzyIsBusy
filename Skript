@@ -1,0 +1,17 @@
+command suicide:
+  trigger:
+    if player is within region "spawn":
+      set players health to 0 out of 20
+ 
+ 
+ 
+ If players inventory can hold %item%(1):
+	send %item% to player inventory
+	mark %item% data as “mending book”
+	give %item% lore, 3 lines
+	set %item% lore to “&fUse this wisely as you can only have so many!”
+  
+  
+  on death of cow:
+    set %_drop% to percent chance 2, or 3 drops 
+	
